@@ -8,3 +8,9 @@ Worked with express POSTing
 also allowed me to experiment with Github copilot
 
 great refresh on Node and first time diving deep into the React logic
+
+To easily test the project download this repo and run 
+  node index.ts in the backend
+  npm start in the frontend
+
+Enjoy beating all your friends in gamepigeon
