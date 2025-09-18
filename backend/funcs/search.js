@@ -9,10 +9,12 @@ function getFrequencyMap(word) {
 }
 
 function canFormWord(word, availableChars) {
+	const charsCopy = { ...availableChars };
 	for (const char of word) {
-		if(!availableChars[char] || word[char > availableChars[char]]) {
+		if (!charsCopy[char] || charsCopy[char] < 1) {
 			return false;
 		}
+		charsCopy[char]--;
 	}
 	return true;
 }
